@@ -37,9 +37,13 @@ const NotificationCp: React.FC<Notification> = ({notification}) => {
                         </div>
                     </div>
                     <div className="notification-body-data bg-dark">
-                        <Alert className="m-3" variant="secondary">
-                            No information available
-                        </Alert>
+                        {"description" in notification ?
+                            <p className="text-white m-3">{notification.description}</p>
+                            :
+                            <Alert className="m-3" variant="secondary">
+                                No information available
+                            </Alert>
+                        }
                     </div>
                     <div className="notification-body-data bg-secondary">
                         <div>

@@ -13,6 +13,7 @@ export interface Notification {
         "time": string,
         "type": string,
         "name": string,
+        "description"?:string,
         "Address": string,
         contacts: Contact["contact"][]
     }
@@ -84,6 +85,7 @@ function App() {
             "type": "Phone-In-Alarm",
             "name": "MR Kensington",
             "Address": "Mechau Street 32",
+            "description":" Some details could be found here",
             "contacts": [
                 {
                     "id":1,
