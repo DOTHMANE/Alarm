@@ -11,7 +11,7 @@ const ContactCp: React.FC<Contact> =  ({contact}) => {
                 <span>{contact.phone}</span>
             </div>
             <div className="contact-action">
-                <Button className="button" variant="success" onClick={(e) => e.stopPropagation()}>
+                <Button className="button" variant="success">
                     Call
                 </Button>
             </div>

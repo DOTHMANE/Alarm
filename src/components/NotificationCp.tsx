@@ -17,10 +17,10 @@ const NotificationCp: React.FC<Notification> = ({notification}) => {
                     <span className="text-white"> {notification.Address}</span>
                 </div>
                 <div className="notification-actions">
-                    <Button className="button" variant="danger" onClick={(e) => e.stopPropagation()}>
+                    <Button className="button" variant="danger" onClick={(e : React.MouseEvent<HTMLElement> ) => e.stopPropagation()}>
                         Cancel
                     </Button>
-                    <Button className="button" variant="success" onClick={(e) => e.stopPropagation()}>
+                    <Button className="button" variant="success" onClick={(e : React.MouseEvent<HTMLElement>) => e.stopPropagation()}>
                         Dispatch
                     </Button>
                 </div>
