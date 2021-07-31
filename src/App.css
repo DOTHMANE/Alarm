@@ -13,6 +13,45 @@
   }
 }
 
+.ranked-contact {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ranked-contact span{
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px;
+  padding-left: 5px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.available {
+  border-color: #5cb85c;
+  border-style: solid;
+  border-width: thin;
+}
+
+.busy {
+  border-color: #f0ad4e;
+  border-style: solid;
+  border-width: thin;
+}
+
+.operating {
+  border-color: #d9534f;
+  border-style: solid;
+  border-width: thin;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +63,88 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.notification-head {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notification-info{
+  display: flex;
+  justify-content: flex-start;
+  height: 45px;
+  width: 100%;
+  margin: 2px 5px 2px 5px;
+  padding: 5px;
+
 }
+
+.contact {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background-color: #282c34;
+  border-radius: 10px;
+}
+
+.notification-actions{
+  display: flex;
+  justify-content: flex-end;
+  height: 45px;
+  width: 100%;
+}
+
+.contact-info{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 45px;
+  width: 100%;
+  margin: 5px;
+}
+
+.contact-info span{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact-action{
+  display: flex;
+  justify-content: flex-end;
+  height: 45px;
+}
+
+.notification-list{
+ padding: 15px;
+}
+
+.button{
+  width: 150px;
+  margin: 2px 5px;
+  text-align: center;
+}
+.notification{
+
+}
+
+.notification-body{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.notification-body-data{
+  width: 100%;
+}
+
+.notification-info span{
+  display: flex;
+  color: #282c34;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+
